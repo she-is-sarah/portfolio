@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebiesuwa Sarah</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+<!--Mobile View-->
+<div class="mobileview">    
+    <header>
+        <img src="img/logo.png" class="logo">
+        <div class="ham">
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+    </div>
+    </header>
+<!--sidebar-->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <ul>
+                <li><a href="myhome.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="#contactme" onclick="scrollToContact(event)">Contact me</a></li>
+                <li><button id="resume"><a href="https://drive.google.com/uc?export=download&id=1RjhwcnEv-qsAT8DZoMEf8VIByuQomIai" download="Ebiesuwa-Sarah-Resume.pdf"><i class="fas fa-download l"></i>Resume</a></button></li>                
+            </ul>
+            <div class="social-center" id="socials">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/sarahebiesuwa/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/she.is.sarah._/profilecard/?igsh=Y253bmwyaXp0emJ5"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@she.is.sarah._?_t=8qzNKHzvUXd&_r=1"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://github.com/she-is-sarah"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>  
+        </div>   
+    </div>
+</div>
+
+<!--Navbar--> 
+<div class="largescreen">   
+    <nav>
+        <img src="img/logo.png" class="logo">
+        <div class="firstul">
+            <ul>
+                <li><a href="myhome.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="#contactme">Contact me</a></li>              
+            </ul>
+        </div>
+        <div class="sociallinks">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sarahebiesuwa/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/she.is.sarah._/profilecard/?igsh=Y253bmwyaXp0emJ5"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/@she.is.sarah._?_t=8qzNKHzvUXd&_r=1"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://github.com/she-is-sarah"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>        
+    </nav>
+</div>
+
+<!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="photo-container">
+                <img src="img/myprofile.png" alt="my picture" class="hero-photo">
+            </div>
+            <div class="text-content">
+                <h1 class="hero-title">
+                    <span id="typing-text"></span>
+                </h1>
+                <p class="hero-description" id="write-up">I'm a passionate frontend developer with a keen eye for creating sleek, responsive web experiences. Whether it's crafting beautiful UIs or ensuring seamless functionality, I love transforming ideas into digital realities.
+                    Beyond coding, I'm also a video editor, blending creativity and technology to tell stories through videos.
+                    Let's build and create together!</p>
+                <div class="links">
+                    <button id="resume"><a href="https://drive.google.com/uc?export=download&id=1RjhwcnEv-qsAT8DZoMEf8VIByuQomIai" download="Ebiesuwa-Sarah-Resume.pdf"><i class="fas fa-download l"></i>Resume</a></button>
+                    <button id="videos"><a href="https://drive.google.com/drive/folders/1E3g_Yq4bjW2FC3BdOAlDxyb6lZrZUSOz?usp=drive_link"><i class="fas fa-external-link-alt l"></i>Videos</a></button>
+                </div>    
+            </div>
+        </div>
+    </section>
+<!-- Skills Section -->
+<section class="skills-section">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="cards-container">
+        <!-- Frontend Development Card -->
+        <div class="skill-card">
+        <div class="card-header">
+            <svg class="card-icon" fill="none" stroke="white" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+            <h3 class="card-title">Frontend Development</h3>
+        </div>
+                
+        <!-- HTML Skills -->
+            <div class="skill-item">
+                <div class="skill-name">
+                        <span>HTML5</span>
+                        <span>95%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+            </div>
+
+                <!-- CSS Skills -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>CSS3</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <!-- JavaScript Skills -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional cards for different skill categories -->
+            <div class="skill-card">
+                <div class="card-header">
+                    <svg class="card-icon" fill="none" stroke="white" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3 class="card-title">Frameworks & Tools</h3>
+                </div>
+                
+                <!-- Bootstrap Skills -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Bootstrap</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <!-- Git Skills -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Wordpress</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <!-- GitHub Skills -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>GitHub</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Progress Card -->
+            <div class="skill-card">
+                <div class="card-header">
+                    <svg class="card-icon" fill="none" stroke="white" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                    <h3 class="card-title">Currently Learning</h3>
+                </div>
+                
+                <!-- React Skills -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <!-- TypeScript Skills -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Jquery</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%"></div>
+                    </div>
+                </div>
+
+                <!-- Node.js Skills -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>SASS</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cards-container">
+            <!-- Video Editing Card -->
+            <div class="skill-card">
+                <div class="card-header">
+                    <svg class="card-icon" fill="none" stroke="white" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg>
+                    <h3 class="card-title">Video Editing</h3>
+                </div>
+                
+                <!-- Current Tools -->
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>CapCut</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>InShot</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Renderforest</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Canva</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Adobe Premiere Pro</span>
+                        <span>25%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>After Effects</span>
+                        <span>15%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills Card -->
+            <div class="skill-card">
+                <div class="card-header">
+                    <svg class="card-icon" fill="none" stroke="white" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    <h3 class="card-title">Soft Skills</h3>
+                </div>
+
+                <div class="soft-skill-item">
+                    <svg class="soft-skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>Leadership</span>
+                </div>
+
+                <div class="soft-skill-item">
+                    <svg class="soft-skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                    <span>Collaboration</span>
+                </div>
+
+                <div class="soft-skill-item">
+                    <svg class="soft-skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>Emotional Intelligence</span>
+                </div>
+
+                <div class="soft-skill-item">
+                    <svg class="soft-skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    <span>Adaptability</span>
+                </div>
+
+                <div class="soft-skill-item">
+                    <svg class="soft-skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <span>Resilience</span>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<!--Contact me-->
+<div class="contactme" id="contactme">
+    <div class="contain">
+        <form>
+            <h2>Connect with Me</h2>
+            
+            <div class="input-group">
+                <input type="text" placeholder="Name" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="tel" placeholder="Phone Number">
+            </div>
+            
+            <div class="input-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            
+            <div class="input-group">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <button type="button" id="send">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+    </div>
+</div>    
+<!--footer-->    
+    <footer>
+        <div class="quicklinks">
+            <ul>
+                <li><a href="myhome.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="#contactme">Contact me</a></li>
+            </ul>      
+        </div>
+        <div class="social-center" id="socials">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sarahebiesuwa/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/she.is.sarah._/profilecard/?igsh=Y253bmwyaXp0emJ5"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/@she.is.sarah._?_t=8qzNKHzvUXd&_r=1"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://github.com/she-is-sarah"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <p>&copy 2024 copyright | Made by Ebiesuwa sarah</p> 
+    </footer>
+<script src="portfolio.js"></script>
+</body>
+</html>
