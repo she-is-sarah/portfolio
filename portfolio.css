@@ -1,4 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
+
+
+/* Loader overlay that covers the whole screen */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide loader after animation */
+.preloader.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Your existing loader styles */
+.loader {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 15px;
+}
+
+.loader-line {
+    width: 6px;
+    height: 25px;
+    background: #E0C1FA;
+    border-radius: 15px;
+    animation: loader-animation 1s ease-in-out infinite;
+}
+
+.loader-line:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loader-line:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes loader-animation {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 40px;
+    }
+    100% {
+        height: 25px;
+    }
+}
+
+/* Hide main content while loading */
+.content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content.show {
+    opacity: 1;
+}
 
 *{
     margin: 0;
@@ -38,7 +107,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .ham{
     margin-right: 20px;
@@ -101,7 +170,7 @@ header{
 .sidebar-content {
     padding: 2rem;
     padding-top: 5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .sidebar-content ul{
@@ -125,7 +194,8 @@ header{
     justify-content: space-between; /* Align items to the sides */
     align-items: center; /* Keep everything on the same line */
     padding-left:8px; /* Space between the logo and contents */
-    font-family: 'Montserrat', sans-serif; /* Elegant, clean font */
+    font-family: 'Inter', sans-serif; /* Elegant, clean font */
+    font-weight: 500;
     font-size: 25px;
 }
 
@@ -293,6 +363,7 @@ header{
     font-family: 'Cursive', sans-serif;
     color: #2A2A2A;
     margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .hero-description {
@@ -302,6 +373,7 @@ header{
     opacity: 0;
     transform: translateX(50px);
     transition: opacity 1s ease, transform 1s ease;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .write-up-visible {
@@ -736,7 +808,8 @@ form  h2 {
 footer p {
     color: #fff;
     margin-top: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 /*footer*/
 /* Footer Styles */
@@ -745,7 +818,7 @@ footer {
     color: #fff; /* Text color for footer */
     text-align: center;
     padding: 20px;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
 footer .quicklinks ul{
@@ -754,6 +827,7 @@ footer .quicklinks ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Style links within quicklinks */
@@ -792,6 +866,7 @@ footer .quicklinks ul{
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.6s ease forwards;
+    font-family: 'Poppins', sans-serif;
 }
 
 .aboutme h1::after {
@@ -833,8 +908,12 @@ footer .quicklinks ul{
     align-items: center;
     gap: 0.5rem;
     font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
 }
-
+.aboutme p{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
 .aboutme h2 i {
     color: #E0C1FA;
 }
@@ -842,6 +921,8 @@ footer .quicklinks ul{
 .aboutme ul {
     list-style: none;
     padding-left: 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
 }
 
 .aboutme li {
@@ -860,6 +941,7 @@ footer .quicklinks ul{
     background-color: #ebf8ff;
     border-left: 4px solid #4299e1;
     padding: 1.2rem;
+    margin-bottom: 8px;
     border-radius: 8px;
     margin-top: 1.5rem;
     display: flex;
@@ -867,6 +949,8 @@ footer .quicklinks ul{
     gap: 1rem;
     opacity: 0;
     transform: translateY(30px);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
 }
 
 .aboutme .open.visible {
