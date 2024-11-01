@@ -104,11 +104,10 @@ async function handleSubmit(event) {
     };
 
     try {
-        const response = await fetch('https://mail-api.isaac0yen.com/send_mail/isaacoyeniyi06@gmail.com', {
+        const response = await fetch('https://mail-api.isaac0yen.com/send_mail/ayopelumi4african@gmail.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Origin': 'https://www.isaac0yen.com'
             },
             body: JSON.stringify(formData)
         });
