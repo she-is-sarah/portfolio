@@ -312,6 +312,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    margin-right:0;
 }
 
 .hero-content {
@@ -325,7 +326,7 @@ header{
 
 .photo-container {
     position: relative;
-    width: 300px;
+    width:100px;
     height: 450px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -382,7 +383,7 @@ header{
 #typing-text {
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: bold;
-    font-family: 'Cursive', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #2A2A2A;
     white-space: nowrap;
     overflow: hidden;
@@ -436,7 +437,8 @@ header{
     color:#F5E6FA;
 }
 #videos{
-
+    padding-left:3px;
+    padding-right:3px;
     padding: 18px 30px;
     background-color:#FFFFFF;
     color:#2A2A2A;
