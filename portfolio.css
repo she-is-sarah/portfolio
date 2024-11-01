@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
-
-
 /* Loader overlay that covers the whole screen */
 .preloader {
     position: fixed;
@@ -360,7 +358,7 @@ header{
 .hero-title {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
-    font-family:sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #2A2A2A;
     margin-bottom: 1rem;
     font-family: 'Playfair Display', serif;
