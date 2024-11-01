@@ -327,7 +327,7 @@ header{
 
 .photo-container {
     position: relative;
-    width: 350px;
+    width: 340px;
     height: 450px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -360,7 +360,7 @@ header{
 .hero-title {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
-    font-family: 'Cursive', sans-serif;
+    font-family:sans-serif;
     color: #2A2A2A;
     margin-bottom: 1rem;
     font-family: 'Playfair Display', serif;
@@ -428,6 +428,7 @@ header{
     font-size: 20px;
     border:none;
     border-radius: 10px;
+    margin-bottom: 8px;
 }
 .l{
     font-size: 20px;
@@ -439,7 +440,7 @@ header{
 }
 #videos{
 
-    padding: 15px 30px;
+    padding: 18px 30px;
     background-color:#FFFFFF;
     color:#2A2A2A;
     font-size: 20px;
